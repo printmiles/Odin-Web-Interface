@@ -1,0 +1,370 @@
+﻿/*********************************************************************************/
+/* Adapted by:    Alexander Harris BSc Hons (Open), MSc (KCL)                    */
+/* For use in:    Odin - Open Document & Information Network                     */
+/* Contact:       alexander (dot) j (dot) harris (at) btinternet (dot) com       */
+/* Last modified: 30th April 2012                                                */
+/*                                                                               */
+/*                        NOT INTENDED FOR COMMERCIAL USE                        */
+/*                                                                               */
+/* Adapted from css Zen Garden submission #174 - 'Simple' by Shawn Chin          */
+/* Reference website: http://www.csszengarden.com/?cssfile=174/174.css           */
+/* Authors website: http://www.shawnchin.net/                                    */
+/*                                                                               */
+/* Licensed under the Creative Commons License: Attribution, Non-commercial,     */
+/* Share-Alike 1.0 Generic (http://creativecommons.org/licenses/by-nc-sa/1.0/)   */
+/*********************************************************************************/
+
+/*********************************************************************************/
+/* These are for tags common to the whole document                               */
+/*********************************************************************************/
+body
+{
+	text-align:center;
+	padding:0;
+	margin:1px 0 0;
+	font:normal 12px Trebuchet, Arial, Helvetica, Sans-serif;
+	color:#1f313f;
+	background: #1f313f;
+}
+
+a
+{
+	color:#39607c;
+	text-decoration:underline;
+}
+
+a:hover
+{
+	color:#6995b4;
+}
+
+acronym
+{
+	color:#39607c;
+}
+/*********************************************************************************/
+/* This is for the container and page head which is kept the same for all pages  */
+/*********************************************************************************/
+#container
+{
+	text-align:left;
+	background:#1f313f url(./images/rightNavBack.png) repeat-y top left;
+	width:700px;	
+	margin:auto;
+	position:relative;
+	padding:0;
+}
+
+#pageHeader
+{
+	width:700px;
+	height:80px;
+	background:#1f313f url(./images/header.png) no-repeat;
+	margin:0;
+	padding:0;
+}
+
+#pageHeader h1,h2
+{
+	padding:0;
+	margin:0;
+	display:none;
+}
+
+#quickSummary
+{
+	margin:0;
+	padding:0;
+	position:relative;	
+	width:700px;
+	height:75px;	
+	background:#ffffff;
+}
+
+#quickSummary p
+{
+	margin:0;
+	padding:0;
+}
+
+#quickSummary .p1
+{
+	position:absolute;
+	top:0;
+	left:1px;
+	width:700px;
+	height:75px;
+	background: #1f313f url(./images/summary.png) no-repeat 250px 0;	
+}
+
+#quickSummary .p1 span
+{
+	display:none; 
+}
+
+#quickSummary .p2
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:250px;
+	height:75px;
+	background:url(./images/linkIcons.png) no-repeat top left;
+}
+
+#quickSummary .p2 span
+{
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+#quickSummary .p2 a
+{
+	width:250px;
+	height:37px;
+	float:right;
+	visibility:visible;
+	text-indent:-9000px;
+	overflow:hidden;
+	margin-top:-1.3em;
+	margin-bottom:1.4em;
+}
+
+#supportingText
+{
+	width:524px;
+}
+/*********************************************************************************/
+/* These are the topmost items for each page                                     */
+/*********************************************************************************/
+#introduction
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#afcbe0 url(./images/whatIsOdin.png) no-repeat top left;
+}
+
+#furtherInfo
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#afcbe0 url(./images/furtherInfo.png) no-repeat top left;
+}
+
+#manualList
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#afcbe0 url(./images/manuals.png) no-repeat top left;
+}
+
+#configYourNetwork
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#afcbe0 url(./images/configNetwork.png) no-repeat top left;
+}
+
+#metaDocSummary
+{
+	position:relative;
+	margin:0;
+	padding:0;
+	width:524px;
+	background:#afcbe0 url(./images/metaDocSummary.png) no-repeat top left;
+}
+/*********************************************************************************/
+/* This is for the hidden text for the leading items (for accessibility)         */
+/*********************************************************************************/
+#introduction h3, #furtherInfo h3, #manualList h3, #configYourNetwork h3,
+#metaDocSummary h3
+{
+	display:none;
+	margin:0;
+	padding:0;
+}
+/*********************************************************************************/
+/* This is for the first line of text in each of the article sections            */
+/*********************************************************************************/
+#introduction .p1, #sleipnir .p1, #names .p1, #whatDoINeed .p1, #furtherInfo .p1,
+#configOwn .p1, #manualList .p1, #configYourNetwork .p1, #setupOdin .p1,
+#metaDocSummary .p1, #metaDocAttributes .p1, #metaDocKeywords .p1, #metaDocAdditional .p1
+{
+	margin:0;
+	padding: 25px 15px 10px 15px;
+}
+/*********************************************************************************/
+/* This is for the subsequent lines of text in each of the article sections      */
+/*********************************************************************************/
+#introduction p, #sleipnir p, #names p, #whatDoINeed p, #furtherInfo p,
+#configOwn p, #manualList p, #configYourNetwork p, #setupOdin p,
+#metaDocSummary p, #metaDocAttributes p, #metaDocKeywords p, #metaDocAdditional p
+{
+	margin:0;
+	padding:0px 15px 10px 15px;
+}
+/*********************************************************************************/
+/* These are similar to the above sections but for subsequent articles           */
+/*********************************************************************************/
+#sleipnir
+{
+	background:#afcbe0 url(./images/sleipnir.png) no-repeat top left;
+}
+
+#names
+{
+	background:#afcbe0 url(./images/names.png) no-repeat top left;
+}
+
+#whatDoINeed
+{
+	background:#afcbe0 url(./images/whatDoINeed.png) no-repeat top left;
+}
+
+#configOwn
+{
+	background:#afcbe0 url(./images/configOwn.png) no-repeat top left;
+}
+
+#setupOdin
+{
+	background:#b5cce3 url(./images/setupOdin.png) no-repeat top left;
+}
+
+#metaDocAttributes
+{
+	background:#b5cce3 url(./images/metaDocAttributes.png) no-repeat top left;
+}
+
+#metaDocKeywords
+{
+	background:#b5cce3 url(./images/metaDocKeywords.png) no-repeat top left;
+}
+
+#metaDocAdditional
+{
+	background:#b5cce3 url(./images/metaDocAdditional.png) no-repeat top left;
+}
+
+#configOwn h3, #setupOdin h3, #sleipnir h3, #names h3, #whatDoINeed h3,
+#llinks h3, #lresources h3, #metaDocAttributes h3, #metaDocKeywords h3,
+#metaDocAdditional h3
+{
+	display:none;
+	margin: 0;
+	padding: 0;
+}
+/*********************************************************************************/
+/* This is for the footer of each page                                           */
+/*********************************************************************************/
+#footer
+{
+	background:#39607c;
+	padding-top:7px;
+	padding-left:10px;
+	padding-bottom:7px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#extraDiv1
+{
+	margin:auto;
+	width:700px;
+	height:9px;
+}
+/*********************************************************************************/
+/* This is for the list of links on the right-hand side of each page             */
+/*********************************************************************************/
+#linkList
+{
+	position:absolute;
+	top:155px;
+	left:526px;
+	width:173px;
+	background:#afcbe0;
+	color:#39607c;
+}
+
+#linkList a, #footer a
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#linkList a:hover, #footer a:hover
+{
+	color:#90b2d5;
+}
+
+#llinks
+{
+	background:#6995b4 url(./images/llinkHeader.png) no-repeat top left;
+	padding: 35px 0 10px 10px;
+}
+
+#lresources
+{
+	background:#6995b4 url(./images/lResourcesHeader.png) no-repeat top left;
+	padding: 35px 0 10px 10px;
+}
+
+#llinks h3, #lresource h3
+{
+	display: none;	
+}
+
+#llinks ul, #lresources ul
+{
+	margin:0;
+	padding:0px 15px 5px 15px;
+}
+
+#llinks li, #lresources li
+{	
+	padding: 0px 0px 5px 10px;
+	margin: 0;
+	list-style-type:square;
+}
+/*********************************************************************************/
+/* This is for any tables of data displayed on the results page                  */
+/*********************************************************************************/
+.data
+{
+  border: 1px solid #39607c;
+  border-collapse: collapse;
+  width: 496px;
+  margin-left: 15px;
+}
+
+.data td
+{
+  border: 1px solid #39607c;
+}
+
+.data th
+{
+  border: 1px solid #39607c;
+}
+
+.data caption
+{
+  font-weight: bold;
+  font-size: 110%;
+  color: #1f313f;
+  text-align: center;
+}
+
+.data tr.alt
+{
+  background-color: #ffffff;
+  color: #1f313f;
+}

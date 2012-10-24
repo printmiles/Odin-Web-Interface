@@ -1,0 +1,45 @@
+		<div id="footer">
+			<span>
+				<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" title="View details of the license of this site, courtesy of Creative Commons">cc</a> &nbsp;|
+				<a href="http://www.csszengarden.com" title="CSS Zen Garden">css zen garden</a> &nbsp;|
+				<a href="http://www.kcl.ac.uk/nms/depts/informatics" title="Department of Informatics at King&#8217;s College London">department of informatics</a>
+			</span>
+		</div>
+	</div>
+
+	
+	<div id="linkList">
+		<!--extra div for flexibility - this list will probably be the trickiest spot you'll deal with -->
+		<div id="linkList2">
+
+		<!-- If you're wondering about the extra &nbsp; at the end of the link, it's a hack to meet WCAG 1 Accessibility. -->
+			<div id="llinks">
+				<h3><span>Links:</span></h3>
+				<!-- list of links begins here. There will be no more than 8 links per page -->
+				<ul>
+					<li><a href="main.jsp" title="The main home page for this repository">Home</a>&nbsp;</li>
+					<li><a href="additional.jsp" title="Additional information about Odin">Additional information</a>&nbsp;</li>
+					<li><a href="admins.jsp" title="Information about Odin and Sleipnir for administrators and advanced users">Administrators</a>&nbsp;</li>
+					<li><a href="manual.jsp" title="User guides for reference and offline viewing">User guides</a>&nbsp;</li>
+				</ul>
+			</div>
+
+			<div id="lresources">
+				<h3><span>Resources:</span></h3>
+				<ul>
+					<li><a href="http://get.adobe.com/reader/" title="Download Adobe's Acrobat Reader to view user guides">Adobe Acrobat</a></li>
+					<li><a href="http://www.java.com/download" title="Download Java Virtual Machine to run Sleipnir">Java</a></li>
+					<li><a href="http://www.apache.org" title="View the Apache Software Foundation's website">Apache Software Foundation</a></li>
+					<li><a href="http://tomcat.apache.org" title="Access the project page for Apache Tomcat">Apache Tomcat</a></li>
+					<li><a href="http://tika.apache.org" title="Access the project page for Apache Tika">Apache Tika</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </div>
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+  <div id="extraDiv1">
+	<span></span>
+  </div>
+</body>
+</html>

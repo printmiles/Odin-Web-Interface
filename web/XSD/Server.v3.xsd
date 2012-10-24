@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://localhost/XSD/Root">
+  <xs:complexType name="root">
+    <xs:sequence>
+    <!-- Repositories are those servers which this one "knows" about -->
+      <xs:element name="repositories" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="repository" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="address" type="xs:anyURI" maxOccurs="1"/>
+                  <xs:element name="trust" type="xs:integer" maxOccurs="1"/>
+                  <xs:element name="keywords" maxOccurs="1">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="keyword" type="xs:string" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Subjects are those specialist topics associated with this server and their scores -->
+      <xs:element name="subjects" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="subject" type="xs:string" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Locations are for directory URIs for various aspects of the application operation -->
+      <xs:element name="locations" maxOccurs="1">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="archive" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="conversion" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="format" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="logging" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="preference" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="quarantine" type="xs:anyURI" maxOccurs="1"/>
+            <xs:element name="repository" type="xs:anyURI" maxOccurs="1"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

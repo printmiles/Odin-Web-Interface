@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <description>Odin is the "open document &amp; information network". It is the former MSc dissertation of Alexander Harris BSc (Hons), MSc</description>
+    <display-name>Odin</display-name>
+    <servlet>
+        <servlet-name>Odin</servlet-name>
+        <servlet-class>odin.web.MetadataCollector</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Odin</servlet-name>
+        <url-pattern>/document</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+</web-app>

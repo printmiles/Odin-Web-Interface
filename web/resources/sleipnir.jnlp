@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8080/odin/resources/" href="sleipnir.jnlp">
+  <information>
+    <title>Sleipnir</title>
+    <vendor>Alexander Harris</vendor>
+    <homepage href="http://sites.google.com/site/printmiles/Odin"/>
+    <description>Test phase 4 for Sleipnir.</description>
+    <icon href="../images/Sleipnir64Logo.jpg"/>
+    <shortcut online="true">
+      <desktop/>
+      <menu submenu="Odin"/>
+    </shortcut>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <update check="background" policy="prompt-update"/>
+  <resources>
+    <j2se version="1.6+"/>
+    <jar href="Sleipnir.jar"/>
+  </resources>
+  <application-desc main-class="org.kcl.odin.sleipnir.RunSleipnir">
+    <argument>language=en</argument>
+    <argument>country=GB</argument>
+    <argument>home=localhost</argument>
+  </application-desc>
+</jnlp>
